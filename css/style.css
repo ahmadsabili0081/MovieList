@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9d2;
+  background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+}
+
+body .container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body .container header {
+  width: 100%;
+  height: auto;
+}
+
+body .container header .container__header {
+  max-width: 1200px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+}
+
+body .container header .container__header .logo {
+  font-size: 25px;
+  letter-spacing: 1.5px;
+}
+
+body .container header .container__header .search {
+  margin-top: 10px;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #f8f9d2;
+}
+
+body .container header .container__header .search input {
+  width: 80%;
+  padding: 10px;
+  display: inline-block;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  background-color: unset;
+}
+
+body .container header .container__header .search button.searchBtn {
+  display: inline-block;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background: unset;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+body .container section.apps__movies {
+  padding: 100px 0px;
+  position: relative;
+}
+
+body .container section.apps__movies .container__apps__movies {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+body .container section.apps__movies .container__apps__movies .row__apps__movies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .container section.apps__movies .container__apps__movies .row__apps__movies .box__movies {
+  width: 250px;
+  background-color: #fff;
+  margin: 20px 20px;
+  height: 450px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+body .container section.apps__movies .container__apps__movies .row__apps__movies .box__movies img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+body .container section.apps__movies .container__apps__movies .row__apps__movies .box__movies h3 {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+body .container section.apps__movies .container__apps__movies .row__apps__movies .box__movies .ratingMovie {
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container section.apps__movies .container__apps__movies .row__apps__movies .box__movies .ratingMovie span.releaseData {
+  font-weight: 400;
+  display: inline-block;
+}
+
+body .container section.apps__movies .container__apps__movies .row__apps__movies .box__movies .ratingMovie i {
+  color: rgba(255, 174, 0, 0.664);
+}
+
+body .container section.apps__movies .container__apps__movies .row__apps__movies .box__movies .overview {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 10px 20px;
+  overflow: auto;
+  line-height: 1.5;
+  bottom: -100%;
+  border-radius: 10px 10px 0px 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .container section.apps__movies .container__apps__movies .row__apps__movies .box__movies .overview h3 {
+  text-align: left;
+  margin-left: -10px;
+}
+
+body .container section.apps__movies .container__apps__movies .row__apps__movies .box__movies:hover {
+  box-shadow: 0px -1px 34px 2px linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+  -webkit-box-shadow: 0px -1px 34px 2px #9c5959;
+  -moz-box-shadow: 0px -1px 34px 2px #9c5959;
+}
+
+body .container section.apps__movies .container__apps__movies .row__apps__movies .box__movies:hover .overview {
+  bottom: 0;
+}
+
+@media screen and (max-width: 570px) {
+  body .container {
+    width: 100%;
+  }
+  body .container header {
+    width: 100%;
+  }
+  body .container header .container__header {
+    width: 100%;
+  }
+  body .container header .container__header .logo {
+    display: none;
+  }
+  body .container header .container__header .search {
+    width: 100%;
+  }
+  body .container header .container__header .search input {
+    font-size: 18px;
+  }
+  body .container section.apps__movies {
+    width: 100%;
+    padding: 50px 10px;
+  }
+  body .container section.apps__movies .container__apps__movies {
+    width: 100%;
+  }
+  body .container section.apps__movies .container__apps__movies .row__apps__movies .box__movies {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
